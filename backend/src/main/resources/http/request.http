@@ -1,0 +1,110 @@
+POST http://localhost/admins/send-one
+Content-Type: requisition/json
+
+{
+  "email": "2",
+  "password": "2",
+  "firstName": "2",
+  "lastName": "2",
+  "middleName": "2",
+  "universityHashCode": "2",
+  "dolgnost": "4"
+}
+
+###
+POST http://localhost/admins/send-many
+Content-Type: requisition/json
+
+[
+  {
+  "email": "3",
+  "password": "3",
+  "firstName": "3",
+  "lastName": "3",
+  "middleName": "3",
+  "universityHashCode": "3",
+  "dolgnost": "3"
+  },
+  {
+    "email": "4",
+    "password": "4",
+    "firstName": "4",
+    "lastName": "4",
+    "middleName": "4",
+    "universityHashCode": "4",
+    "dolgnost": "4"
+  }
+]
+
+###
+GET http://localhost/check-connection
+
+###
+
+POST http://localhost/students/send-one
+Content-Type: requisition/json
+
+{
+ "email": "mail3@mail.ru",
+ "password": "123456",
+ "firstName": "Марат",
+ "lastName": "МаратФ",
+ "middleName": "МаратМ",
+ "universityHashCode": "3",
+ "isMale": true,
+ "isNowStatement": true,
+ "citizenshipId": 3,
+ "studentCategory": {"studentCategory": "BUDGET"},
+ "formEducation": {"formEducation": "FULL-TIME"},
+ "qualificationType": {"qualificationType": "BAKALAVR"},
+ "courseId": 2,
+ "countryId": 2,
+ "facultyId": 2,
+ "age": 21,
+ "hasPreferential": true
+}
+
+###
+POST http://localhost/students/send-many
+Content-Type: requisition/json
+
+[
+  {
+    "email": "mail3@mail.ru",
+    "password": "123456",
+    "firstName": "Марат",
+    "lastName": "МаратФ",
+    "middleName": "МаратМ",
+    "universityHashCode": "3",
+    "isMale": true,
+    "isNowStatement": true,
+    "citizenshipId": 3,
+    "studentCategory":{"studentCategory": "BUDGET"},
+    "formEducation": {"formEducation": "FULL-TIME"},
+    "qualificationType": {"qualificationType": "BAKALAVR"},
+    "courseId": 2,
+    "countryId": 2,
+    "facultyId": 2,
+    "age": 21,
+    "hasPreferential": true
+  },
+  {
+    "email": "mail3@mail.ru",
+    "password": "123456",
+    "firstName": "Марат",
+    "lastName": "МаратФ",
+    "middleName": "МаратМ",
+    "universityHashCode": "3",
+    "isMale": true,
+    "isNowStatement": true,
+    "citizenshipId": 3,
+    "studentCategory": {"studentCategory": "BUDGET"},
+    "formEducation": {"formEducation": "FULL-TIME"},
+    "qualificationType": {"qualificationType": "BAKALAVR"},
+    "courseId": 2,
+    "countryId": 2,
+    "facultyId": 2,
+    "age": 21,
+    "hasPreferential": true
+  }
+]
